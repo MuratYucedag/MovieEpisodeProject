@@ -41,10 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\BLActor.cs" />
     <Compile Include="BL\BLCategory.cs" />
     <Compile Include="BL\BLMovie.cs" />
     <Compile Include="BL\BLSeries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{873fe728-39f2-4e54-a969-e6be536a20d9}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FacadeLayer\FacadeLayer.csproj">
+      <Project>{b40ac79a-8fad-419d-ae56-f9994f48c2bd}</Project>
+      <Name>FacadeLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\EntityActor.cs" />
     <Compile Include="Entities\EntityCategory.cs" />
     <Compile Include="Entities\EntityMovie.cs" />
     <Compile Include="Entities\EntitySeries.cs" />

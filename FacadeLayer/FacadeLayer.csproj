@@ -42,11 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\DbConnection.cs" />
+    <Compile Include="Dal\DALActor.cs" />
     <Compile Include="Dal\DALCategory.cs" />
     <Compile Include="Dal\DALMovie.cs" />
     <Compile Include="Dal\DALSeries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{873fe728-39f2-4e54-a969-e6be536a20d9}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

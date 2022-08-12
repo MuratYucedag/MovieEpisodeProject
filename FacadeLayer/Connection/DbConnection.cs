@@ -7,8 +7,8 @@ using System.Data.SqlClient;
 
 namespace FacadeLayer.Connection
 {
-    internal class DbConnection
+    public class DbConnection
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-07T8MF2\MSSQLSERVER01;Initial Catalog=DbAkademiFilmDizi;integrated Security=True");
+        public static SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-07T8MF2\MSSQLSERVER01;Initial Catalog=DbAkademiFilmDizi;integrated Security=True");
     }
 }

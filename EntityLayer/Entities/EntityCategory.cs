@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Entities
 {
-    internal class EntityCategory
+    public class EntityCategory
     {
         //field
         private int categoryid;
